@@ -1,38 +1,11 @@
-/* Here are example using scss */
+/* Here are example using css */
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+.from-css {
+  color: #74FAC8;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #282c34;
-  color: #fff;
-  font-size: 1.6rem;
-  text-align: center;
-}
-
-.from-scss {
-  color: #0096FF;
-}
-
-.link {
-  color: #61dafb;
-  font-size: 2rem;
-  margin-top: 3rem;
-}
-
-#lazy-load {
-  padding: 1rem 1.5rem;
-  border: 0;
-  border-radius: 10rem;
-  outline: none;
+.img {
+  width: 100%;
+  max-width: 50rem;
 }

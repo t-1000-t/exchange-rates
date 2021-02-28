@@ -1,3 +1,7 @@
+import './styles/style.css';
+import './styles/style.scss';
+import './styles/style.sass';
+
 function component() {
 
   const element = document.createElement('p');
