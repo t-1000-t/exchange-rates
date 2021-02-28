@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 *,
@@ -26,18 +26,13 @@ body {
 
 .header {
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
 .example {
   display: flex;
   justify-content: center;
-
-  &-style,
-  &-lazy-load {
-    margin: 3rem 2rem;
-  }
 }
 
 .from-scss {
@@ -46,13 +41,7 @@ body {
 
 .link {
   color: #61dafb;
-  font-size: 2rem;
-  margin-top: 3rem;
+  font-size: 3rem;
+  margin-top: 4.5rem;
 }
 
-#lazy-load {
-  padding: 1rem 1.5rem;
-  border: 0;
-  border-radius: 10rem;
-  outline: none;
-}
