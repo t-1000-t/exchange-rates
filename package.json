@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --config=config/webpack.dev.js",
-    "build": "webpack --config=config/webpack.prod.js",
+    "build": "webpack --config=config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
