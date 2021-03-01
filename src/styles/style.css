@@ -1,11 +1,26 @@
 /* Here are example using css */
 
-.from-css {
-  color: #74FAC8;
+.rates {
+  width: 100px;
+  height: 100px;
+  background: url(../assets/images/converter21.png) 0 0/contain no-repeat;
 }
 
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+}
 
-.img {
-  width: 100%;
-  max-width: 50rem;
+.headerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapperNav {
+  display: flex;
+  width: 1158px;
+}
+
+.setUl {
+  list-style: none;
 }

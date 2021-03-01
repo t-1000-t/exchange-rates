@@ -1,22 +1,20 @@
-export default async function getPrivatCour() {
+import createElem from "../createElem/createElem";
+import appendElem from "../appendElem/appendElem";
 
-  const result = await fetch("https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11")
+export default async function getPrivatCour() {
+  let ul = createElem('ul')
+  let main = document.getElementById('main-root')
+  appendElem(main, ul)
+  await fetch("https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11")
     .then(res => res.json())
     .then(data => {
-        return data.map(el => {
-        const div = document.createElement('div')
-        const p = document.createElement('p')
-        const elem = p.appendChild(document.createTextNode(el.ccy))
-        return div.appendChild(elem)
+      return data.map(el => {
+        let li = createElem('li')
+        li.textContent = `${el.ccy}`
+        appendElem(ul, li)
       })
     })
-
-  console.log("res", result)
-
-  document.getElementById('main-root').append(result)
-
 }
-
 
 
 

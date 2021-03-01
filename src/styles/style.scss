@@ -8,13 +8,13 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #282c34;
+  background-color: #435485;
   color: #fff;
   font-size: 1.6rem;
   text-align: center;
@@ -44,4 +44,3 @@ body {
   font-size: 3rem;
   margin-top: 4.5rem;
 }
-
