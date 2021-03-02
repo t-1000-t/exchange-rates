@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #739ab3;
+  background-color: #d4cdbb;
   color: #fff;
   font-size: 1.6rem;
   text-align: center;
@@ -34,6 +34,27 @@ body {
 }
 .containerH {
   padding: 20px;
+}
+
+.divP {
+  width: 150px;
+  height: 10px;
+  font-family: 'Arimo', sans-serif;
+  color: #c0efbe;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15px;
+  align-items: center;
+}
+
+.divPrivat {
+  font-family: 'Arimo', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 95px;
+  flex-direction: column;
+  text-align: center;
+  color: #74b027;
 }
 
 .responsive-table {
@@ -58,5 +79,22 @@ body {
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
   }
 }
-  @media all and (max-width: 767px) {
-}
+  @media all and (min-width: 767px) {
+    .inpFrom {
+      min-width: 480px;
+    }
+    .divForm {
+      min-width: 480px;
+      margin-bottom: 40px;
+    }
+    .inpNum {
+      margin: 6px;
+    }
+    .selCur {
+      margin: 6px;
+    }
+    .containerH {
+      padding: 40px;
+    }
+
+  }

@@ -3,14 +3,14 @@ import appendElem from "../appendElem/appendElem";
 import appendOptionList from "../appendOptionList/appendOptionList";
 import appendListLiP from "../appendListLiP/appendListLiP";
 
-const listElements = [{text: 'UAH: ', id: 11}, {
-  text: 'Б/НДС: ',
+const listElements = [{text: 'UAH : ', id: 11}, {
+  text: 'Б/НДС : ',
   id: 12
-}, {text: 'Б/НДС +5%: ', id: 13}, {text: 'Б/НДС +10%: ', id: 14}, {
-  text: 'Б/НДС +15: ',
+}, {text: 'Б/НДС +5% : ', id: 13}, {text: 'Б/НДС +10% : ', id: 14}, {
+  text: 'Б/НДС +15 : ',
   id: 15
-}, {text: 'Б/НДС +20%: ', id: 16}, {text: 'Б/НДС +25%: ', id: 17}, {
-  text: 'Б/НДС +30%: ',
+}, {text: 'Б/НДС +20% : ', id: 16}, {text: 'Б/НДС +25% : ', id: 17}, {
+  text: 'Б/НДС +30% : ',
   id: 18
 }]
 
@@ -41,10 +41,11 @@ export default function mainExchange() {
   // Section
   const sectionElem = createElem('section')
   sectionElem.classList = 'card1 divForm'
-  // H4
-  const h4Elem = createElem('h4')
-  h4Elem.textContent = 'Приват-Банк'
-  appendElem(sectionElem, h4Elem)
+  // div Privat
+  const divElemP = createElem('div')
+  divElemP.classList = 'divPrivat'
+  divElemP.textContent = 'Приват-Банк'
+  appendElem(sectionElem, divElemP)
   // ul
   const ulElem = createElem('div')
   ulElem.classList = 'responsive-table'
