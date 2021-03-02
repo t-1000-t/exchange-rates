@@ -2,20 +2,26 @@ import createElem from "../createElem/createElem";
 import appendElem from "../appendElem/appendElem";
 
 export default function headerExchange() {
+  // Nav
   const wrapperElem = createElem("nav")
-  wrapperElem.classList = 'wrapperNav'
-  //
+  wrapperElem.classList = 'row justify-content-left'
+  // Div
   const divElem = createElem('div')
   divElem.classList = 'rates'
   appendElem(wrapperElem, divElem)
-  //
+  // Img
   const imgLogo = createElem('img')
   imgLogo.classList = 'img'
   appendElem(divElem, imgLogo)
-  //
-  const element = createElem('h1');
-  element.textContent = 'Калькулятор'
-  appendElem(wrapperElem, element)
+  // Div2
+  const divElem2 = createElem('div')
+  divElem2.classList = 'col-2'
+  // P
+  const elementP = createElem('p');
+  elementP.textContent = 'Калькулятор'
+  elementP.classList = "elementP"
+  appendElem(divElem2, elementP)
+  appendElem(wrapperElem, divElem2)
 
 
 

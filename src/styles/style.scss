@@ -14,33 +14,49 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #435485;
+  background-color: #739ab3;
   color: #fff;
   font-size: 1.6rem;
   text-align: center;
+}
+.inpFrom {
+  min-width: 280px;
+}
+.divForm {
+  min-width: 280px;
+  margin-bottom: 20px;
+}
+.inpNum {
+  margin: 3px;
+}
+.selCur {
+  margin: 3px;
+}
+.containerH {
+  padding: 20px;
+}
 
-  & > * {
-    margin: 2rem 0;
+.responsive-table {
+  min-width: 250px;
+  margin: 3px;
+  .liC {
+    border-radius: 3px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .table-header {
+    background-color: #95A5A6;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
   }
 }
-
-.header {
-  h1 {
-    font-size: 4.5rem;
-  }
-}
-
-.example {
-  display: flex;
-  justify-content: center;
-}
-
-.from-scss {
-  color: #0096FF;
-}
-
-.link {
-  color: #61dafb;
-  font-size: 3rem;
-  margin-top: 4.5rem;
+  @media all and (max-width: 767px) {
 }

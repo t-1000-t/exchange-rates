@@ -24,3 +24,27 @@
 .setUl {
   list-style: none;
 }
+
+.elementP {
+  font-family: 'Arimo', sans-serif;
+  color: #69e395;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 95px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.elementP2 {
+  font-family: 'Arimo', sans-serif;
+  color: #cddb51;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.containerC {
+   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: baseline;
+ }

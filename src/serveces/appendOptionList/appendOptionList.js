@@ -1,9 +1,9 @@
 import createElem from "../createElem/createElem";
 import appendElem from "../appendElem/appendElem";
-import getPrivatListCour from "./getPrivatListCour";
+import getPrivListArr from "../getPrivListArr/getPrivListArr";
 
 export default function appendOptionList(select) {
-  getPrivatListCour().then(data => {
+  getPrivListArr().then(data => {
     data.map(el => {
       const option = createElem('option')
       option.textContent = el.ccy

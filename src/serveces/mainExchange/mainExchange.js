@@ -1,47 +1,59 @@
 import createElem from "../createElem/createElem";
 import appendElem from "../appendElem/appendElem";
-import appendListLi from "../appendListLi/appendListLi";
 import appendOptionList from "../appendOptionList/appendOptionList";
+import appendListLiP from "../appendListLiP/appendListLiP";
 
-const listElements = ['UAH', 'Б/Н', 'Б/Н +5%', 'Б/Н +10%', 'Б/Н +15', 'Б/Н +20%', 'Б/Н +25%', 'Б/Н +30%']
+const listElements = [{text: 'UAH: ', id: 11}, {
+  text: 'Б/НДС: ',
+  id: 12
+}, {text: 'Б/НДС +5%: ', id: 13}, {text: 'Б/НДС +10%: ', id: 14}, {
+  text: 'Б/НДС +15: ',
+  id: 15
+}, {text: 'Б/НДС +20%: ', id: 16}, {text: 'Б/НДС +25%: ', id: 17}, {
+  text: 'Б/НДС +30%: ',
+  id: 18
+}]
 
 export default function mainExchange() {
   const mainRoot = document.getElementById('main-root')
+
   // div
   const divElem = createElem('div')
-  // H4
-  const h4Elem = createElem('h4')
-  h4Elem.textContent = 'Банк Приват'
-  appendElem(divElem, h4Elem)
-  // Select
-  const selectElem = createElem('select')
-  // Option
-  appendOptionList(selectElem)
-  appendElem(divElem, selectElem)
+  divElem.classList = 'divForm'
   // Form
   const formElem = createElem('form')
+  formElem.classList = "inpFrom"
   appendElem(divElem, formElem)
   //Input
   const inputElem = createElem('input')
+  inputElem.classList = "form-control inpNum"
   inputElem.type = 'text'
   inputElem.placeholder = 'введите сумму'
+  inputElem.id = 'input-form'
   appendElem(formElem, inputElem)
-  // Button
-  const buttonElem = createElem('button')
-  buttonElem.textContent = 'Enter'
-  appendElem(formElem, buttonElem)
+  // Select
+  const selectElem = createElem('select')
+  selectElem.classList = 'form-select selCur'
+  selectElem.id = 'currency-text'
+  // Option
+  appendOptionList(selectElem)
+  appendElem(formElem, selectElem)
   // Section
   const sectionElem = createElem('section')
-  sectionElem.classList = 'card1'
+  sectionElem.classList = 'card1 divForm'
+  // H4
+  const h4Elem = createElem('h4')
+  h4Elem.textContent = 'Приват-Банк'
+  appendElem(sectionElem, h4Elem)
   // ul
-  const ulElem = createElem('ul')
-  ulElem.classList = 'setUl'
+  const ulElem = createElem('div')
+  ulElem.classList = 'responsive-table'
+
   appendElem(sectionElem, ulElem)
   // li
-  appendListLi(listElements, ulElem)
+  appendListLiP(listElements, ulElem)
 
 
   appendElem(mainRoot, divElem)
   appendElem(mainRoot, sectionElem)
-
 }
