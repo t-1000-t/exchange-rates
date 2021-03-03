@@ -4,13 +4,13 @@ import appendOptionList from "../appendOptionList/appendOptionList";
 import appendListLiP from "../appendListLiP/appendListLiP";
 
 const listElements = [{text: 'UAH : ', id: 11}, {
-  text: 'Б/НДС : ',
+  text: 'НДС : ',
   id: 12
-}, {text: 'Б/НДС +5% : ', id: 13}, {text: 'Б/НДС +10% : ', id: 14}, {
-  text: 'Б/НДС +15 : ',
+}, {text: 'НДС +5% : ', id: 13}, {text: 'НДС +10% : ', id: 14}, {
+  text: 'НДС +15% : ',
   id: 15
-}, {text: 'Б/НДС +20% : ', id: 16}, {text: 'Б/НДС +25% : ', id: 17}, {
-  text: 'Б/НДС +30% : ',
+}, {text: 'НДС +20% : ', id: 16}, {text: 'НДС +25% : ', id: 17}, {
+  text: 'НДС +30% : ',
   id: 18
 }]
 
