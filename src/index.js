@@ -17,14 +17,4 @@ calc2()
 
 const selectCurrency = document.getElementById('currency-text')
 selectCurrency.addEventListener('change', calc1)
-
-
-
-
-
-
-//
-// inputForm.removeEventListener('input', calculate)
-// selectCurrency.removeEventListener("change", calculate)
-
-console.log(1)
+selectCurrency.addEventListener('change', calc2)
