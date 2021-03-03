@@ -1,25 +1,26 @@
-import createElem from "../createElem/createElem";
-import appendElem from "../appendElem/appendElem";
-import appendOptionList from "../appendOptionList/appendOptionList";
-import appendListLiP from "../appendListLiP/appendListLiP";
+import createElem from "../../createElem/createElem";
+import appendElem from "../../appendElem/appendElem";
+import appendOptionList from "../../appendOptionList/appendOptionList";
+import appendListLiP from "../../appendListLiP/appendListLiP";
 
 const listElements = [{text: 'UAH : ', id: 11}, {
   text: 'НДС : ',
   id: 12
-}, {text: 'НДС +5% : ', id: 13}, {text: 'НДС +10% : ', id: 14}, {
-  text: 'НДС +15% : ',
+}, {text: '+5% : ', id: 13}, {text: '+10% : ', id: 14}, {
+  text: '+15% : ',
   id: 15
-}, {text: 'НДС +20% : ', id: 16}, {text: 'НДС +25% : ', id: 17}, {
-  text: 'НДС +30% : ',
+}, {text: '+20% : ', id: 16}, {text: '+25% : ', id: 17}, {
+  text: '+30% : ',
   id: 18
 }]
 
-export default function mainExchange() {
+export default function mainTable1() {
   const mainRoot = document.getElementById('main-root')
 
   // div
   const divElem = createElem('div')
   divElem.classList = 'divForm'
+  divElem.id = 'div-form'
   // Form
   const formElem = createElem('form')
   formElem.classList = "inpFrom"
@@ -41,18 +42,36 @@ export default function mainExchange() {
   // Section
   const sectionElem = createElem('section')
   sectionElem.classList = 'card1 divForm'
+  sectionElem.id = 'section-elem'
   // div Privat
   const divElemP = createElem('div')
   divElemP.classList = 'divPrivat'
   divElemP.textContent = 'Приват-Банк'
+  divElemP.id = 'div-privat-p'
   appendElem(sectionElem, divElemP)
-  // ul
+
+  // wrapTableDiv
+  const wrapTableDiv = createElem('div')
+  wrapTableDiv.classList = 'wrapperTables'
+  wrapTableDiv.id = 'wrapper-tables'
+
+  // div resp-id
   const ulElem = createElem('div')
   ulElem.classList = 'responsive-table'
+  ulElem.id = 'resp-id'
 
-  appendElem(sectionElem, ulElem)
-  // li
+  // div Name resp
+  const divNameResp = createElem('span')
+  divNameResp.textContent = "НДС"
+  divNameResp.classList = 'elemDNR'
+
+  appendElem(sectionElem, wrapTableDiv)
+  appendElem(ulElem, divNameResp)
+  appendElem(wrapTableDiv, ulElem)
+
+  // li 1
   appendListLiP(listElements, ulElem)
+
 
 
   appendElem(mainRoot, divElem)

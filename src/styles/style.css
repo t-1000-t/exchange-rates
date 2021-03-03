@@ -28,7 +28,7 @@
 .elementP {
   font-family: 'Arimo', sans-serif;
   color: #6c7778;
-  font-size: 34px;
+  font-size: calc(20px + 10 *(100vw/1280));
   font-weight: 600;
   line-height: 95px;
   flex-direction: column;
@@ -37,8 +37,8 @@
 
 .elementP2 {
   font-family: 'Arimo', sans-serif;
+  font-size: calc(16px + 6 *(100vw/1280));
   color: #cddb51;
-  font-size: 2rem;
   font-weight: 500;
   line-height: 25px;
 }

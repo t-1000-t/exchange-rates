@@ -1,6 +1,8 @@
 import createElem from "../createElem/createElem";
 import appendElem from "../appendElem/appendElem";
 
+
+// push arr in ul
 export default function appendListLiP(arr, ul) {
   arr.map(el => {
     const li = createElem('div')
